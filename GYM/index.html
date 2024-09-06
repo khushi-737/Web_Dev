@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Power zone</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Tiro Devanagari Sanskrit', serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg') repeat-x;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 111px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 1px;
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 57%;
+        margin: 37px auto;
+        /* border: 2px solid yellow; */
+    }
+
+    .right {
+        position: absolute;
+        right: 19px;
+        top: 44px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 27px 17px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(97, 95, 95);
+
+    }
+
+    .btn {
+        font-family: 'Tiro Devanagari Sanskrit', serif;
+        margin: 0px 6px;
+        background-color: black;
+        color: white;
+        padding: 2px 10px;
+        border: 2px solid rgb(74, 73, 73);
+        border-radius: 10px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 90px;
+        padding: 55px;
+        width: 55%;
+        height: 45%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Tiro Devanagari Sanskrit', serif;
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 21px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .container div {
+        text-align: left;
+        font-size: 21px;
+        color: white;
+        font-family: 'Tiro Devanagari Sanskrit', serif;
+    }
+
+    .container div p {
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .container button {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box is for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Power Zone</div>
+        </div>
+        <!-- Mid box is for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box is for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Haldia West Bengal now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                Name:<p><input type="text" name="myname" placeholder="Enter your Name"></p>
+            </div>
+            <div class="form-group">
+                Age:<p><input type="text" name="myage" placeholder="Enter your Age"></p>
+            </div>
+            <div class="form-group">
+                Gender: <p>Male<input type="radio" name="my gender"> Female<input type="radio" name="my gender">
+                    Other<input type="radio" name="my gender"></p>
+            </div>
+            <div class="form-group">
+                Email:<p><input type="email" name="myemail" placeholder="Enter your Email Id"></p>
+            </div>
+            <div class="form-group">
+                Locality:<p><input type="text" name="mylocality" placeholder="Enter your Locality"></p>
+            </div>
+            <div class="form-group">
+                Phone number:<p><input type="text" name="myphonenumber" placeholder="Enter your Phone Number"></p>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
